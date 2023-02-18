@@ -1,0 +1,70 @@
+sudo apt-get update - synchronisates information from repasitory with local cache
+sudo apt full-upgrade - update system and all pockets and programs
+sudo apt-get install "program name" - installs current program
+sudo apt-get remove "program name" - deletes current program but saves configuration files
+sudo apt-get purge "program name" - deletes current program with configuration files
+sudo apt-get check
+sudo apt-get autoclean - deletes old archive packets
+
+df -h - information about disk storage
+sudo passwd root - change root password
+sudo -i - enter root and exit from all directories
+su - enter root without exiting from current directory
+uptime - It is used to find out how long the system is active (running)
+mkdir - create directory
+mkdir -p - create many directories as path
+cat - read the file
+cat /etc/os-release - information about linux os
+cd /sbin - in 'sbin' directory are stored executable programs by root users
+cd /bin - in 'bin' directory are stored executable programs by normal users
+cd /etc - in 'etc' directory are stored configuration files and directories
+cp - copy files
+cp -r - copy directories
+mv - move files
+rm - remove files
+rmdir - remove empty directory
+rm -r - remove directory with his files
+rm -r * - remove everything in directory
+free -m - RAM parameters
+touch filename{1..10} - creating 10 files with name 'filename'
+file "file path" - shows file type
+ls -l - shows all files with information about creating data and access
+ls -a - same as ls -l + hidden files
+ln -s "original file type" "link file path" - creating file shortcut(link)
+
+
+
+filters
+
+grep 'word in file' 'file name' - finiding line with this word in file
+grep -i 'word in file' 'file name' - finiding all lines with this word in file  (անկախ նրանից թե բառը մեծատառ է թե փոքրատառ)
+grep -i 'word in files' * - finding all lines with this word in all files in current directory  (անկախ նրանից թե բառը մեծատառ է թե փոքրատառ)
+grep -iR 'word in files' * - finding all lines with this word in all files in current directory and shows this file locations (անկախ նրանից թե բառը մեծատառ է թե փոքրատառ)
+
+
+redirecting
+'command' > 'file path' - writes in file result of command
+'command' >> 'file path' - adds in file result of command
+
+
+
+Network commands
+ifconfig - checking ip adress and netmask
+nslookup "domain name" - shows ip adress of domain name
+
+
+
+git commands
+git clone "link of repo"
+after adding files in repository
+git add .
+git status
+git commit -m "message"
+git push
+
+branches
+git branch "new branch name"
+switch to other branch
+git checkout "new branch name"
+git log --all --graph
+
